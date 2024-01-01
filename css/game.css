@@ -1,0 +1,279 @@
+@charset "utf-8";
+
+.wrapper {
+  flex-direction: column;
+  display: flex;
+  width: 1260px;
+  margin: 0 auto;
+  text-align: center;
+  border: 6px solid #000;
+  background: url(../images/bg.jpg);
+}
+
+.disable {
+  opacity: 0.5;
+  pointer-events: none;
+  user-select: none;
+}
+
+.container {
+  position: relative;
+  width: 960px;
+  margin: 11px auto;
+  background-color: #fff;
+  background: url(../images/bg.jpg);
+  border: 6px solid #000;
+  border-radius: 240px 15px 185px 15px / 15px 200px 15px 185px;
+
+  /* #e61909 */
+}
+
+.game-container {
+  position: relative;
+  width: 100%;
+  /* 白銀比 */
+  height: 398px;
+  overflow: hidden;
+  /* border: 1px solid blue; */
+}
+
+.background {
+  position: absolute;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 100%;
+}
+
+.background-sun {
+  background-image: url('../images/background-sun.png');
+  z-index: 7;
+  top: 50px;
+  left: 620px;
+  width: 75px;
+  height: 75px;
+}
+
+.background-fuji {
+  background-image: url('../images/background-fuji.png');
+  z-index: 8;
+  /* top: 130px; */
+  bottom: 0px;
+  right: 0px;
+  /* left: 600px; */
+  /* 5:3 */
+  width: 200px;
+  height: 120px;
+}
+
+.background-cloud {
+  background-image: url('../images/background-cloud.png');
+  z-index: 9;
+  top: 50px;
+  left: -214px;
+  width: 214px;
+  height: 82px;
+}
+
+.background-stone {
+  background-image: url('../images/background-stone.png');
+  z-index: 11;
+  bottom: 0px;
+  left: -130px;
+  width: 130px;
+  height: 89px;
+}
+
+.background-torii {
+  background-image: url('../images/background-torii.png');
+  z-index: 9;
+  bottom: 0px;
+  right: 130px;
+  /* bottom: 50px;
+  left: -130px; */
+  width: 130px;
+  height: 89px;
+}
+
+.dogrun {
+  position: absolute;
+  width: 600px;
+  height: 450px;
+  /* 中央寄せ。 game-container.width / 2 - dogrun.width / 2 */
+  /* 960px / 2 - 600px / 2 = 180px */
+  left: 180px;
+  bottom: -96px;
+  z-index: 10;
+}
+
+.dogrun > img {
+  width: 100%;
+  height: 100%;
+}
+
+.runway {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  border: 3px solid #000;
+}
+
+.answer-form {
+  position: relative;
+  width: 400px;
+  height: 60px;
+  margin: 2em auto 0;
+}
+
+.answer-input {
+  display: block;
+  position: absolute;
+  left: 0;
+  width: 340px;
+  height: 60px;
+  text-align: center;
+  font-size: 20px;
+  border: 3px solid #e61909;
+  border-radius: 240px 15px 185px 15px / 15px 200px 15px 185px;
+  background-image: url(../images/bg.jpg);
+}
+
+.btn-enter {
+  display: block;
+  position: absolute;
+  right: 0;
+  width: 60px;
+  height: 60px;
+  font-size: 20px;
+  line-height: 20px;
+  text-align: center;
+  background-color: #ea2600;
+  border-radius: 240px 15px 185px 15px / 15px 200px 15px 185px;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-toggle {
+  display: block;
+  position: relative;
+  margin: 1em auto;
+  width: 400px;
+  height: 60px;
+  font-size: 20px;
+  line-height: 20px;
+  border: 3px solid #000;
+  border-radius: 240px 15px 185px 15px / 15px 200px 15px 185px;
+  /* background-color: #fff; */
+  background-image: url(../images/bg.jpg);
+  color: #000;
+  text-align: center;
+  letter-spacing: 1em;
+  padding-left: 1em;
+  outline: none;
+  cursor: pointer;
+}
+
+.btn-toggle-retire {
+  /* background-color: #000; */
+  /* color: #fff; */
+  color: red;
+}
+
+/* ランキングエリア */
+.text-container {
+  width: 960px;
+  height: 1523px;
+  margin: 64px auto;
+  background-image: url(../images/secondView/ranking-waku.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  text-align: center;
+}
+
+.ranking-title {
+  margin: 110px auto;
+  font-size: 50px;
+}
+
+.rankingNumberOfParticipants {
+  font-size: 24px;
+  margin-bottom: 55px;
+}
+
+.ranking-table {
+  margin: 0 auto;
+  width: 600px;
+  height: auto;
+  /* background-color: red; */
+  text-align: center;
+  /* border: 1px solid #000; */
+}
+
+.ranking-topPlayer {
+  font-size: 32px;
+  /* background-color: blue; */
+}
+
+.ranking-topPlayer td {
+  padding: 32px 0;
+  /* border: 1px solid #000; */
+}
+
+.ranking-Player {
+  font-size: 22px;
+  /* background: green; */
+}
+
+.ranking-Player td {
+  padding: 20px 0;
+  /* border: 1px solid #000; */
+}
+
+/* ランキングの赤い線 */
+.ranking-red-line {
+  width: 470px;
+  height: 7px;
+  margin: 50px auto;
+  background: url('../images/secondView/ranking-red-line.png');
+}
+
+.ranking-table-timeover {
+  margin: 0 auto;
+  width: 490px;
+  height: auto;
+  /* background-color: red; */
+  text-align: center;
+}
+
+.rank--first {
+  color: #d6c200;
+}
+.rank--second {
+  color: #b3bec4;
+}
+.rank--third {
+  color: #978d7b;
+}
+
+.btn-replay {
+  margin: 88px auto;
+  width: 400px;
+  height: 60px;
+  font-size: 20px;
+  line-height: 20px;
+  border: 3px solid #000;
+  border-radius: 240px 15px 185px 15px / 15px 200px 15px 185px;
+  /* background-color: #fff; */
+  background-image: url(../images/bg.jpg);
+  color: #000;
+  text-align: center;
+  letter-spacing: 3px;
+  padding-left: 1em;
+  outline: none;
+  cursor: pointer;
+}
+
+.btn-toggle:hover,
+.btn-replay:hover {
+  opacity: 0.5;
+}

@@ -1,0 +1,22 @@
+@charset "utf-8";
+
+/**
+ * red: #e61909
+ */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Hannari, serif;
+  background-color: #a33f2c;
+}
+
+form, input, button {
+	font-family: Hannari, serif;
+}
+
+input {
+  outline: none;
+}
